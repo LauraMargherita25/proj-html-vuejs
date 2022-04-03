@@ -1,43 +1,43 @@
 <template>
-    <!-- Section our courses's pros -->
-    <div class="courses_pros">
-        <div class="wrapper_s py-5">
+   
+        <!-- Section our courses's pros -->
+        <div class="wrapper_s">
             <div class="row">
                 <div class="col-4">
-                    <div class="bg-info p-4 h-100">
-                        <i class="fa-solid fa-earth-americas fs-1"></i>
-                        <h2>Worldwide Recognize</h2>
-                        <p>
+                    <div class="card_pros">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <p>Worldwide Recognize</p>
+                        <small>
                         Our online course certificates can be used around the world and
                         also in most popular universities and companies.
-                        </p>
+                        </small>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <div class="bg-info p-4 h-100">
-                        <i class="fa-solid fa-desktop fs-1"></i>
-                        <h2>Mostly Online Learning (sd)</h2>
-                        <p>
+                    <div class="card_pros">
+                        <i class="fa-solid fa-desktop"></i>
+                        <p>Mostly Online Learning (sd)</p>
+                        <small>
                         Masterstudy online certificates can be obtained in a range of
                         specialized areas and typically take about a year to complete.
-                        </p>
+                        </small>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <div class="bg-info p-4 h-100">
-                        <i class="fa-regular fa-calendar-check fs-1"></i>
-                        <h2>Graduate in as little as 1 Year</h2>
-                        <p>
+                    <div class="card_pros">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <p>Graduate in as little as 1 Year</p>
+                        <small>
                         Online post-graduate certificates are a popular way to develop
-                        your professional qualifications of Masterstudy
-                        </p>
+                        your professional qualifications of Masterstudy.
+                        </small>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
 </template>
 
 <script>
@@ -46,4 +46,27 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "../assets/styles/partials/variables.scss";
+
+    .wrapper_s{
+        margin-bottom: 7rem;
+
+        .card_pros{
+            padding: 2rem;
+            background-color: $light_blue;
+            p{
+                margin-bottom: 1rem;
+            }
+            small{
+                color: #838a97;
+                font-size: 13.5px;
+            }
+            i{
+                color: $blue;
+                font-size: 60px;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+</style>

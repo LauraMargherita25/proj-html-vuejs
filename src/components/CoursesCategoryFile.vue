@@ -1,7 +1,7 @@
 <template>
     <!-- Section courses category -->
     <div class="courses_category">
-        <div class="wrapper_s py-5">
+        <div class="wrapper_s">
             
             <div class="row">
                 <div class="col-8">

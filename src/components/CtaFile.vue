@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
     .wrapper_s{
-        margin-bottom: 2rem;
+        margin-bottom: 4.5rem;
         .txt_wrapper{
             h1{
                 margin-bottom: 2rem;
