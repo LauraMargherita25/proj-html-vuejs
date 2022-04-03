@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container">
+    <div class="wrapper_s">
       <div class="row row-cols-4">
         <div class="col-3">
           <h5>About</h5>
