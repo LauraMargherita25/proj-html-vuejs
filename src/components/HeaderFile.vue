@@ -63,6 +63,10 @@ export default {
 
 <style lang="scss" scoped>
 
+header{
+    margin-bottom: 5rem
+}
+
 .search_section{
     width: 50%;
     input{
