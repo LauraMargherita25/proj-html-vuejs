@@ -36,37 +36,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-    .txt_wrapper{
-        h1{
-            margin-bottom: 2rem;
+    .wrapper_s{
+        margin-bottom: 2rem;
+        .txt_wrapper{
+            h1{
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 22px;
+                margin-bottom: 2rem;
+            }
         }
-        p{
-            font-size: 22px;
-            margin-bottom: 2rem;
-        }
-    }
-    .img_wrapper {
-        position: relative;
-        .book1{
-            top: 108px;
-            left: 373px;
-        }
-        .book2{
-            top: 275px;
-            left: 220px;
-        }
-        .bubblespeech{
-            top: 57px;
-            left: 488px;
-        }
-        .moon{
-            top: 122px;
-            left: 101px;
-        }
-        .magnifier{
-            top: 320px;
-            left: 460px;
+        .img_wrapper {
+            position: relative;
+            .book1{
+                top: 108px;
+                left: 373px;
+            }
+            .book2{
+                top: 275px;
+                left: 220px;
+            }
+            .bubblespeech{
+                top: 57px;
+                left: 488px;
+            }
+            .moon{
+                top: 122px;
+                left: 101px;
+            }
+            .magnifier{
+                top: 320px;
+                left: 460px;
+            }
         }
     }
 </style>
