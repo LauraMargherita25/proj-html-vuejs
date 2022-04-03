@@ -1,9 +1,9 @@
 <template>
     <!-- Section more info -->
     <div class="more_info">
-        <div class="wrapper_s h-100">
-            <div class="row h-100">
-                <div class="col-6 d-flex align-items-center h-100">
+        <div class="wrapper_s">
+            <div class="row">
+                <div class="col-6 d-flex align-items-center">
                     <div class="">
                         <h1>Limitless learning, more possibilities</h1>
                         <p>Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.</p>
