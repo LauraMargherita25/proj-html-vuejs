@@ -129,6 +129,28 @@
     </div>
 
     <!-- Section recent courses -->
+    <div class="recent_courses">
+      <div class="my_container py-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center">
+              <h1>Recnt courses</h1>
+              <nav>
+                <ul class="list-inline">
+                  <li class="list-inline-item px-2">All Categories</li>
+                  <li class="list-inline-item px-2">Art</li>
+                  <li class="list-inline-item px-2">Exercise</li>
+                  <li class="list-inline-item px-2">Material Design</li>
+                  <li class="list-inline-item px-2">Music</li>
+                  <li class="list-inline-item px-2">Photograohy</li>
+                  <li class="list-inline-item px-2">Software Development</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Section we are proud -->
     <div class="we_are_proud bg-info">
@@ -207,6 +229,18 @@
     </div>
 
     <!-- Section popular courses -->
+    <div class="popular_courses">
+      <div class="my_container py-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center">
+              <h1>Popular courses</h1>
+              <p>Discover our most popular courses for self learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Section work with us -->
     <div class="work_with_us">
