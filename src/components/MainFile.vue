@@ -111,6 +111,25 @@
       </div>
     </div>
 
+    <!-- Section more info -->
+    <div class="more_info">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-6 d-flex align-items-center h-100">
+            <div class="">
+                <h1>Limitless learning, more possibilities</h1>
+                <p>Online courses open the opportunity for learning to almost anyone, regardless of their scheduling commitments.</p>
+                <div class="common_btn">
+                  read more
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
     <!-- Section work with us -->
     <div class="work_with_us">
       <div class="my_container py-5">
@@ -181,10 +200,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .img_wrapper{
   height: 800px;
   width: 800px;
 }
+
+.more_info{
+  height: 60vh;
+  background-image: url("../assets/images/Untitled-1-1-1-1-1.png");
+}
+
 .come_as_u_are {
   height: 70vh;
   background-image: url("../assets/images/brooke-cagle-224821-unsplash-1-1920x700.jpg");
