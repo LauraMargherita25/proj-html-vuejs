@@ -62,10 +62,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my_container{
-    width: 1800px;
-    margin: 0 auto;
-}
 
 .search_section{
     width: 50%;

@@ -1,5 +1,17 @@
+.my_container{
+    width: 1800px;
+    margin: 0 auto;
+}
+
 .common_btn{
-    background-color: aqua;
+    padding: 1rem;
     border-radius: 50px;
+
+    display: inline-block;
+
+    background-color: aqua;
+
     text-transform: uppercase;
+
+    cursor: pointer;
 }
