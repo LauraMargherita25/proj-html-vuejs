@@ -2,7 +2,7 @@
   <main>
     <!-- section cta -->
     <div class="cta">
-      <div class="container">
+      <div class="wrapper_s">
         <div class="row">
           <div class="col-7 d-flex align-items-center">
             <div class="txt_wrapper">
@@ -23,7 +23,7 @@
 
     <!-- Section our courses's pros -->
     <div class="courses_pros">
-      <div class="container py-5">
+      <div class="wrapper_s py-5">
         <div class="row">
 
           <div class="col-4">
@@ -56,7 +56,7 @@
 
     <!-- Section courses category -->
     <div class="courses_category">
-      <div class="container py-5">
+      <div class="wrapper_s py-5">
         
         <div class="row">
           <div class="col-8">
@@ -113,7 +113,7 @@
 
     <!-- Section more info -->
     <div class="more_info">
-      <div class="container h-100">
+      <div class="wrapper_s h-100">
         <div class="row h-100">
           <div class="col-6 d-flex align-items-center h-100">
             <div class="">
@@ -130,7 +130,7 @@
 
     <!-- Section recent courses -->
     <div class="recent_courses">
-      <div class="my_container py-5">
+      <div class="wrapper_l py-5">
         <div class="row">
           <div class="col-12">
             <div class="text-center">
@@ -154,7 +154,7 @@
 
     <!-- Section we are proud -->
     <div class="we_are_proud bg-info">
-      <div class="container">
+      <div class="wrapper_s">
         <div class="row">
 
           <div class="col-12">
@@ -200,7 +200,7 @@
 
     <!-- Section newsletter -->
     <div class="newsletter bg-success">
-      <div class="container">
+      <div class="wrapper_s">
         <div class="row">
 
           <div class="col-6">
@@ -230,7 +230,7 @@
 
     <!-- Section popular courses -->
     <div class="popular_courses">
-      <div class="my_container py-5">
+      <div class="wrapper_l py-5">
         <div class="row">
           <div class="col-12">
             <div class="text-center">
@@ -244,7 +244,7 @@
 
     <!-- Section work with us -->
     <div class="work_with_us">
-      <div class="my_container py-5">
+      <div class="wrapper_l py-5">
         <div class="row">
 
           <div class="col-6">
@@ -279,7 +279,7 @@
     
     <!-- Setion feed -->
     <div class="come_as_u_are">
-      <div class="container py-5 h-100 d-flex">
+      <div class="wrapper_s py-5 h-100 d-flex">
         <div class="col-7 h-100">
           <div class="container_mex bg-light p-5 h-100">
             <h1>Come as you are</h1>

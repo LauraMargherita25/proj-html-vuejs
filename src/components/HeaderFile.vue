@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="header_top border-bottom">
-            <div class="my_container d-flex align-items-center">
+            <div class="wrapper_l d-flex align-items-center">
                 <select name="" id="" class="me-auto">
                     <option value="english">English</option>
                 </select>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="header-btm">
-            <div class="my_container d-flex align-items-center py-3">
+            <div class="wrapper_l d-flex align-items-center py-3">
 
                 <img src="../assets/images/MasterStudy_logo.svg" alt="master-study_logo" class="me-4">
 
