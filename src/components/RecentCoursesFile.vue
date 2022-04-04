@@ -1,11 +1,11 @@
 <template>
     <!-- Section recent courses -->
     <div class="recent_courses">
-        <div class="wrapper_l py-5">
+        <div class="wrapper_l">
             <div class="row">
                 <div class="col-12">
                     <div class="text-center">
-                        <h1>Recnt courses</h1>
+                        <h2>Recnt courses</h2>
                         <nav>
                             <ul class="list-inline">
                             <li class="list-inline-item px-2">All Categories</li>
