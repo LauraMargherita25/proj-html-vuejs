@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/partials/variables.scss";
+
     .wrapper_l{
         margin-bottom: 7rem;
         h2{
