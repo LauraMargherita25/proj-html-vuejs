@@ -47,7 +47,7 @@ export default {
     .wrapper_l{
         padding: 6rem 0;
         .card_wwf{
-            padding: 5rem 12rem 4rem 2rem;
+            padding: 5rem 10rem 4rem 2rem;
             border: 1px solid $light_gray;
             display: flex;
             img{
