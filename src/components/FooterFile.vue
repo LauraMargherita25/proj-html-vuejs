@@ -2,6 +2,7 @@
   <footer>
     <div class="wrapper_s">
       <div class="row row-cols-4">
+
         <div class="col-3">
           <h5>About</h5>
           <p>
@@ -9,6 +10,7 @@
             Management System (LMS) for online education. Developed by
             StylemixThemes.
           </p>
+          <a href="#" v-for="social in arrSocial" :key="social"><i :class="`fa-brands ${social}`"></i></a>
         </div>
 
         <div class="col-3">
@@ -22,39 +24,24 @@
         <div class="col-3">
           <h5>Pages</h5>
           <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shortcodes</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Membership</a></li>
-            <li><a href="#">Typography</a></li>
+            <li v-for="link in arrLinks" :key="link"><a href="#">{{ link }}</a></li>
           </ul>
         </div>
 
         <div class="col-3">
           <h5>Blog</h5>
-          <div class="post d-flex mb-3">
+          <div class="post d-flex mb-3" v-for="post in arrPosts" :key="post.postId">
             <img
-              src="../assets/images/photo-1517520287167-4bbf64a00d66-69x69.jpeg"
+              :src="post.img"
               alt="post-image"
               class="me-3"
             />
             <div class="post_content">
-              <p class="m-0">Our main target is to "Developing Yourself as a Leader"</p>
-              <p class="m-0">-August 9, 2018</p>
+              <p class="m-0">{{ post.text }}</p>
+              <p class="m-0">{{ post.date }}</p>
             </div>
           </div>
-          <div class="post d-flex mb-3">
-            <img
-              src="../assets/images/photo-1517520287167-4bbf64a00d66-69x69.jpeg"
-              alt="post-image"
-              class="me-3"
-            />
-            <div class="post_content">
-              <p class="m-0">Our main target is to "Developing Yourself as a Leader"</p>
-              <p class="m-0">-August 9, 2018</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -64,11 +51,42 @@
 <script>
 export default {
   name: "MainFile",
+  data() {
+    return {
+      arrSocial: [
+        'fa-twitter-square',
+        'fa-facebook',
+        'fa-instagram',
+      ],
+      arrLinks: [
+        'Blog',
+        'Home',
+        'Shortcodes',
+        'Courses',
+        'Membership',
+        'Typography',
+      ],
+      arrPosts: [
+        {
+          postId: 1,
+          img: require('../assets/images/photo-1517520287167-4bbf64a00d66-69x69.jpeg'),
+          text: 'Our main target is to "Developing Yourself as a Leader"',
+          date: '- August 9, 2018',
+        },
+        {
+          postId: 2,
+          img: require('../assets/images/photo-1490376840453-5f616fbebe5b-69x69.jpeg'),
+          text: 'Those Other College Expenses You Aren`t Thinking About',
+          date: '- June 3, 2015',
+        }
+      ]
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-ul{
+ul {
   columns: 2;
   list-style: disc;
 }
