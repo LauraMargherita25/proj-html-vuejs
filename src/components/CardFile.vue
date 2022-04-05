@@ -7,7 +7,15 @@
         <hr>
     </div>
     <div class="card_footer">
-        <p class="duration"><i class="fa-regular fa-clock"></i>{{ courseData.duration }}</p>
+        <!-- <div class="rating d-flex align-items-center" v-show="courseData.ratingState == true">
+            <img src="../assets/images/starfull.svg" alt="">
+            <img src="../assets/images/starfull.svg" alt="">
+            <img src="../assets/images/starfull.svg" alt="">
+            <img src="../assets/images/starfull.svg" alt="">
+            <img src="../assets/images/starfull.svg" alt="">
+            <span>{{ courseData.rating }}</span>
+        </div> -->
+        <p class="duration"><i :class="`fa-regular ${courseData.clockIcon}`"></i>{{ courseData.duration }}</p>
         <p class="price">{{ courseData.price }}</p>
     </div>
   </div>

@@ -51,6 +51,9 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
+                    // ratingState: 'false',
+                    rating: '5',
                     price: 'Free',
                 },
                 {
@@ -58,6 +61,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -65,6 +69,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -72,6 +77,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -79,6 +85,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -86,6 +93,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -93,6 +101,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -100,6 +109,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -107,6 +117,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -114,6 +125,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -121,6 +133,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
                 {
@@ -128,6 +141,7 @@ export default {
                     category: 'Apache >',
                     title: 'Web Coding and Apache Basics',
                     duration: '6 hours',
+                    clockIcon: 'fa-clock',
                     price: 'Free',
                 },
             ]
