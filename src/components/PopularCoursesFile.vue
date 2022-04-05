@@ -110,6 +110,9 @@ export default {
                 }
             }
         }
+        .cards_container{
+            margin-bottom: 5rem;
+        }
         .btn_direction{
             display: flex;
             justify-content: center;

@@ -27,9 +27,12 @@ export default {
 
     .card_container{
         width: calc((100% / 6) - 1rem);
+
         border: 1px solid $light_gray;
         margin-left: .5rem;
         margin-right: .5rem;
+
+        background-color: white;
         .card_main{
             padding: 1rem 1rem 0 1rem; 
             p{
