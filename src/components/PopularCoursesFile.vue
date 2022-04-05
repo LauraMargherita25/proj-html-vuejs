@@ -13,6 +13,13 @@
             </div>
             <div class="row">
                 <div class="col-12">
+                    <div class="cards_container d-flex flex-wrap">
+                        <card-file v-for="course in arrCourses" :key="course.title" :course-data="course" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
                     <div class="btn_direction">
                         <div class="arrow left">
                             <i class="fa-solid fa-angle-left"></i>
@@ -28,8 +35,60 @@
 </template>
 
 <script>
+import CardFile from './CardFile.vue'
 export default {
-    name: "PopularCoursesFile"
+    name: "PopularCoursesFile",
+    components: {
+        CardFile
+    },
+    data() {
+        return {
+            arrCourses:[
+                {
+                    thumb: require('../assets/images/photo-1461749280684-dccba630e2f6-272x161.jpeg'),
+                    category: 'Apache >',
+                    title: 'Web Coding and Apache Basics',
+                    duration: '6 hours',
+                    price: 'Free',
+                },
+                {
+                    thumb: require('../assets/images/cat_2-272x161.jpg'),
+                    category: 'Apache >',
+                    title: 'Web Coding and Apache Basics',
+                    duration: '6 hours',
+                    price: 'Free',
+                },
+                {
+                    thumb: require('../assets/images/course-preview-272x161.jpg'),
+                    category: 'Apache >',
+                    title: 'Web Coding and Apache Basics',
+                    duration: '6 hours',
+                    price: 'Free',
+                },
+                {
+                    thumb: require('../assets/images/photo-1496307042754-b4aa456c4a2d-272x161.jpeg'),
+                    category: 'Apache >',
+                    title: 'Web Coding and Apache Basics',
+                    duration: '6 hours',
+                    price: 'Free',
+                },
+                {
+                    thumb: require('../assets/images/photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg'),
+                    category: 'Apache >',
+                    title: 'Web Coding and Apache Basics',
+                    duration: '6 hours',
+                    price: 'Free',
+                },
+                {
+                    thumb: require('../assets/images/cathryn-lavery-67852-unsplash-272x161.jpg'),
+                    category: 'Apache >',
+                    title: 'Web Coding and Apache Basics',
+                    duration: '6 hours',
+                    price: 'Free',
+                },
+            ]
+        }
+    }
 }
 </script>
 
