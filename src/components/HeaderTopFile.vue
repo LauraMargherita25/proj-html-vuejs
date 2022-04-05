@@ -5,34 +5,18 @@
                 <select name="" id="" class="me-auto">
                     <option value="english">English</option>
                 </select>
-                <ul class="d-flex">
-                    <li class="p-2"><a href="#">Courses</a></li>
-                    <li class="p-2">
-                        <span class="position-absolute top-0 end-0  badge bg-danger">
+                
+                <ul  class="d-flex">
+                    <li class="p-2" v-for="link in arrLinks" :key="link.linkTo">
+                        <span class="badge position-absolute top-0 end-0" v-show="link.badge == true">
                             NEW
                         </span>
-                        <a href="#">Zoom</a>
+                        <a href="#">{{ link.linkTo }}</a>
                     </li>
-                    <li class="p-2"><a href="#">Pages</a></li>
-                    <li class="p-2"><a href="#">Bundles</a></li>
-                    <li class="p-2"><a href="#">CourseFormats</a></li>
-                    <li class="p-2">
-                        <a href="#">Add Course</a>
-                        <span class="position-absolute top-0 end-0  badge bg-danger">
-                            NEW
-                        </span>
-                    </li>
-                    <li class="p-2"><a href="#">Demos</a></li>
                 </ul>
-                <ul class="d-flex">
-                    <li class="p-2"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="p-2"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="p-2"><a href="#"><i class="fa-brands fa-behance-square"></i></a></li>
-                    <li class="p-2"><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                    <li class="p-2"><a href="#"><i class="fa-brands fa-flickr"></i></a></li>
-                    <li class="p-2"><a href="#"><i class="fa-brands fa-git"></i></a></li>
-                    <li class="p-2"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li class="p-2"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+
+                <ul  class="d-flex">
+                    <li class="p-2" v-for="social in arrSocials" :key="social.id"><a href="#"><i :class="social.icon"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -42,6 +26,74 @@
 <script>
 export default {
     name: 'HeaderTopFile',
+    data() {
+        return {
+            arrLinks:[
+                {
+                    linkTo: 'Courses',
+                    badge: false,
+                },
+                {
+                    linkTo: 'Zoom',
+                    badge: true,
+                },
+                {
+                    linkTo: 'Pages',
+                    badge: false,
+                },
+                {
+                    linkTo: 'Bundles',
+                    badge: false,
+                },
+                {
+                    linkTo: 'CourseFormats',
+                    badge: false,
+                },
+                {
+                    linkTo: 'Add Course',
+                    badge: true,
+                },
+                {
+                    linkTo: 'Demos',
+                    badge: false,
+                },
+            ],
+            arrSocials: [
+                {
+                    id: 'twitter',
+                    icon: 'fa-brands fa-twitter',
+                },
+                {
+                    id: 'instagram',
+                    icon: 'fa-brands fa-instagram',
+                },
+                {
+                    id: 'behance-square',
+                    icon: 'fa-brands fa-behance-square',
+                },
+                {
+                    id: 'dribbble',
+                    icon: 'fa-brands fa-dribbble',
+                },
+                {
+                    id: 'flickr',
+                    icon: 'fa-brands fa-flickr',
+                },
+                {
+                    id: 'git',
+                    icon: 'fa-brands fa-git',
+                },
+                {
+                    id: 'linkedin',
+                    icon: 'fa-brands fa-linkedin',
+                },
+                {
+                    id: 'pinterest',
+                    icon: 'fa-brands fa-pinterest',
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -65,9 +117,14 @@ export default {
             }
             .badge{
                 padding: 3px;
+
+                background-color: red;
+
                 font-size: 9px;
                 font-weight: 400;
                 border-radius: 0;
+
+                position: absolute;
             }
         }
         i{
