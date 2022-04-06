@@ -7,16 +7,23 @@
         <hr>
     </div>
     <div class="card_footer">
-        <!-- <div class="rating d-flex align-items-center" v-show="courseData.ratingState == true">
-            <img src="../assets/images/starfull.svg" alt="">
-            <img src="../assets/images/starfull.svg" alt="">
-            <img src="../assets/images/starfull.svg" alt="">
-            <img src="../assets/images/starfull.svg" alt="">
-            <img src="../assets/images/starfull.svg" alt="">
-            <span>{{ courseData.rating }}</span>
-        </div> -->
-        <p class="duration"><i :class="`fa-regular ${courseData.clockIcon}`"></i>{{ courseData.duration }}</p>
-        <p class="price">{{ courseData.price }}</p>
+        
+        <div v-show="courseData.ratingState == true">
+            <div class="d-flex align-items-center">
+                <img src="../assets/images/starfull.svg" alt="">
+                <img src="../assets/images/starfull.svg" alt="">
+                <img src="../assets/images/starfull.svg" alt="">
+                <img src="../assets/images/starfull.svg" alt="">
+                <img src="../assets/images/starfull.svg" alt="">
+                <span>{{ courseData.rating }}</span>
+            </div>
+        </div>
+
+        <div v-show="courseData.durationState == true">
+            <p class="duration"><i :class="`fa-regular ${courseData.clockIcon}`"></i>{{ courseData.duration }}</p>
+        </div>
+        <p class="original_price">{{ courseData.originalPrice }}</p>
+        <p class="final_price">{{ courseData.finalPrice }}</p>
     </div>
   </div>
 </template>
@@ -64,7 +71,12 @@ export default {
                     margin-right: .5rem;
                 }
             }
-            .price{
+            .original_price{
+                font-size: 13px;
+                color: $gray;
+                text-decoration: line-through;
+            }
+            .final_price{
                 font-size: 15px;
                 font-weight: 500;
             }
